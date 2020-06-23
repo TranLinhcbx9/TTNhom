@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -1796,12 +1802,21 @@
     <Content Include="Assets\Client\images\product-details\similar2.jpg" />
     <Content Include="Assets\Client\images\product-details\similar3.jpg" />
     <Content Include="Assets\Client\images\shop\advertisement.jpg" />
-    <Content Include="Assets\Client\images\shop\product10.jpg" />
-    <Content Include="Assets\Client\images\shop\product11.jpg" />
-    <Content Include="Assets\Client\images\shop\product12.jpg" />
-    <Content Include="Assets\Client\images\shop\product7.jpg" />
-    <Content Include="Assets\Client\images\shop\product8.jpg" />
-    <Content Include="Assets\Client\images\shop\product9.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-001_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-7JWE7Yag7Yyc207I2464Sk7J28_405x405.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-7JWE7Yag7Yyc7I2464Sk7J287IiY7KCV_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-ATPS11E_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-BentonBS05HCO_230x230.png" />
+    <Content Include="Assets\Client\images\shop\thumb-CP1HS02TTa_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-CP1HS03TTca_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-HXBS08L_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-IFHS41T_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-IFS41Serum_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-IMG_3620_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-NGS10PoreS_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-NGS21E_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-repari_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-THS36Nutrition_230x230.png" />
     <Content Include="Assets\Client\js\bootstrap.min.js" />
     <Content Include="Assets\Client\js\contact.js" />
     <Content Include="Assets\Client\js\gmaps.js" />
@@ -2011,11 +2026,11 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Shop.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
