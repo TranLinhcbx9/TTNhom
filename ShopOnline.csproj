@@ -1735,6 +1735,82 @@
     <Content Include="Assets\Admin\vendor\jquery\jquery.min.js" />
     <Content Include="Assets\Admin\vendor\jquery\jquery.slim.js" />
     <Content Include="Assets\Admin\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="Assets\Client\css\animate.css" />
+    <Content Include="Assets\Client\css\bootstrap.min.css" />
+    <Content Include="Assets\Client\css\font-awesome.min.css" />
+    <Content Include="Assets\Client\css\main.css" />
+    <Content Include="Assets\Client\css\prettyPhoto.css" />
+    <Content Include="Assets\Client\css\price-range.css" />
+    <Content Include="Assets\Client\css\responsive.css" />
+    <Content Include="Assets\Client\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\Client\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Assets\Client\images\404\404.png" />
+    <Content Include="Assets\Client\images\blog\blog-one.jpg" />
+    <Content Include="Assets\Client\images\blog\blog-three.jpg" />
+    <Content Include="Assets\Client\images\blog\blog-two.jpg" />
+    <Content Include="Assets\Client\images\blog\man-four.jpg" />
+    <Content Include="Assets\Client\images\blog\man-one.jpg" />
+    <Content Include="Assets\Client\images\blog\man-three.jpg" />
+    <Content Include="Assets\Client\images\blog\man-two.jpg" />
+    <Content Include="Assets\Client\images\blog\socials.png" />
+    <Content Include="Assets\Client\images\cart\one.png" />
+    <Content Include="Assets\Client\images\cart\three.png" />
+    <Content Include="Assets\Client\images\cart\two.png" />
+    <Content Include="Assets\Client\images\home\bg_border.png" />
+    <Content Include="Assets\Client\images\home\gallery1.jpg" />
+    <Content Include="Assets\Client\images\home\gallery2.jpg" />
+    <Content Include="Assets\Client\images\home\gallery3.jpg" />
+    <Content Include="Assets\Client\images\home\gallery4.jpg" />
+    <Content Include="Assets\Client\images\home\girl1.jpg" />
+    <Content Include="Assets\Client\images\home\girl2.jpg" />
+    <Content Include="Assets\Client\images\home\girl3.jpg" />
+    <Content Include="Assets\Client\images\home\iframe1.png" />
+    <Content Include="Assets\Client\images\home\iframe2.png" />
+    <Content Include="Assets\Client\images\home\iframe3.png" />
+    <Content Include="Assets\Client\images\home\iframe4.png" />
+    <Content Include="Assets\Client\images\home\logo.png" />
+    <Content Include="Assets\Client\images\home\map.png" />
+    <Content Include="Assets\Client\images\home\new.png" />
+    <Content Include="Assets\Client\images\home\partner1.png" />
+    <Content Include="Assets\Client\images\home\partner2.png" />
+    <Content Include="Assets\Client\images\home\partner3.png" />
+    <Content Include="Assets\Client\images\home\partner4.png" />
+    <Content Include="Assets\Client\images\home\pricing.png" />
+    <Content Include="Assets\Client\images\home\product1.jpg" />
+    <Content Include="Assets\Client\images\home\product2.jpg" />
+    <Content Include="Assets\Client\images\home\product3.jpg" />
+    <Content Include="Assets\Client\images\home\product4.jpg" />
+    <Content Include="Assets\Client\images\home\product5.jpg" />
+    <Content Include="Assets\Client\images\home\product6.jpg" />
+    <Content Include="Assets\Client\images\home\recommend1.jpg" />
+    <Content Include="Assets\Client\images\home\recommend2.jpg" />
+    <Content Include="Assets\Client\images\home\recommend3.jpg" />
+    <Content Include="Assets\Client\images\home\sale.png" />
+    <Content Include="Assets\Client\images\home\searchicon.png" />
+    <Content Include="Assets\Client\images\home\shipping.jpg" />
+    <Content Include="Assets\Client\images\product-details\1.jpg" />
+    <Content Include="Assets\Client\images\product-details\new.jpg" />
+    <Content Include="Assets\Client\images\product-details\rating.png" />
+    <Content Include="Assets\Client\images\product-details\share.png" />
+    <Content Include="Assets\Client\images\product-details\similar1.jpg" />
+    <Content Include="Assets\Client\images\product-details\similar2.jpg" />
+    <Content Include="Assets\Client\images\product-details\similar3.jpg" />
+    <Content Include="Assets\Client\images\shop\advertisement.jpg" />
+    <Content Include="Assets\Client\images\shop\product10.jpg" />
+    <Content Include="Assets\Client\images\shop\product11.jpg" />
+    <Content Include="Assets\Client\images\shop\product12.jpg" />
+    <Content Include="Assets\Client\images\shop\product7.jpg" />
+    <Content Include="Assets\Client\images\shop\product8.jpg" />
+    <Content Include="Assets\Client\images\shop\product9.jpg" />
+    <Content Include="Assets\Client\js\bootstrap.min.js" />
+    <Content Include="Assets\Client\js\contact.js" />
+    <Content Include="Assets\Client\js\gmaps.js" />
+    <Content Include="Assets\Client\js\html5shiv.js" />
+    <Content Include="Assets\Client\js\jquery.js" />
+    <Content Include="Assets\Client\js\jquery.prettyPhoto.js" />
+    <Content Include="Assets\Client\js\jquery.scrollUp.min.js" />
+    <Content Include="Assets\Client\js\main.js" />
+    <Content Include="Assets\Client\js\price-range.js" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -1912,6 +1988,9 @@
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
+    <Content Include="Assets\Client\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\Client\fonts\FontAwesome.otf" />
+    <Content Include="Assets\Client\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -1940,7 +2019,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Assets\Client\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -1953,7 +2031,7 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Model\Model.csproj">
+    <ProjectReference Include="Model\Model.csproj">
       <Project>{d0247d7a-5247-4bdc-8acf-f7eb4a0ab47a}</Project>
       <Name>Model</Name>
     </ProjectReference>
