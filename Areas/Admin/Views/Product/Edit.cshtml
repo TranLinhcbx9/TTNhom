@@ -1,0 +1,113 @@
+﻿@model List<Model.EF.ProductCategory>
+
+
+<form action="Edit" method="post" role="form" enctype="multipart/form-data">
+    <input type="hidden" id="id" name="id" value="@ViewBag.pro.maLinhKien" />
+    <div class="box box-default">
+        <div class="box-header with-border">
+            <h3 class="box-title">@ViewBag.Title </h3>
+
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+            </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Tên linh kiện</label>
+                        <input type="text" name="TLK" class="form-control" id="TLK" value="@ViewBag.pro.Name">
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Thông số kỹ thuật</label>
+                        <input type="text" class="form-control" name="TSKT" id="TSKT" value="@ViewBag.pro.Detail">
+                    </div>
+                    @*<div class="form-group">
+                        <label for="exampleInputEmail1">Thời gian bảo hành</label>
+                        <input type="text" class="form-control" name="TGBH" id="TGBH" value="@ViewBag.pro.thoiGianBaoHanh">
+                    </div>*@
+                </div>
+                <!-- /.col -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Loại mỹ phẩm</label>
+                        <select class="form-control" name="MLLK">
+                            @foreach (var item in Model)
+                            {
+                                var select = "";
+                                if (@item.ID == ViewBag.pro.ID)
+                                {
+                                    select = "selected";
+                                }
+                                <option @select value="@item.ID">@item.Name</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Loại máy hỗ trợ</label>
+                        <select class="form-control" name="MLM">
+                            @foreach (var item in ViewBag.lm)
+                            {
+                                var select = "";
+                                if (@item.CategoryID == ViewBag.pro.CategoryID)
+                                {
+                                    select = "selected";
+                                }
+                                <option @select value="@item.CategoryID">@item.Name</option>
+                            }
+                        </select>
+                    </div>
+                    @*<div class="form-group">
+                        <label>Nhà cung cấp</label>
+                        <select class="form-control" name="MNCC">
+                            @foreach (var item in ViewBag.ncc)
+                            {
+                                var select = "";
+                                if (@item.maNCC == ViewBag.pro.maNhaCungCap)
+                                {
+                                    select = "selected";
+                                }
+                                <option @select value="@item.maNCC">@item.tenNhaCungCap</option>
+                            }*@
+                        </select>
+                    </div>
+                    <!-- /.form-group -->
+
+                </div>
+                <!-- /.col -->
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    @*<div class="form-group">
+                            <label for="exampleInputFile">Chọn ảnh</label>
+                            <input type="file" id="photo" name="photo">
+                            <p class="help-block"><img height="100px" src="~/Areas/Admin/Content/Photo/@ViewBag.pro.img" /></p>
+
+                        </div>*@
+                    <div class="form-group">
+                        <label for="exampleInputFile">Chọn ảnh</label>
+                        <input type="file" id="photo" name="photo">
+                        <p class="help-block"><img height="100px" src="~/Areas/Admin/Content/Photo/@ViewBag.pro.Image" /></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mô tả</label>
+                        <textarea name="MT" id="MT" class="form-control" rows="3">@ViewBag.pro.Description</textarea>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.box-body -->
+
+    </div>
+    <div class="box-footer">
+        <input type="submit" class="btn btn-primary" value="Sửa" />
+    </div>
+</form>

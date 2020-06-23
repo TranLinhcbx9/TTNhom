@@ -1,41 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Model.EF;
+
 namespace Model.Dao
 {
-
     public class UserDao
     {
-        ShopOnlineDbContext db = null;
         public UserDao()
         {
-            db = new ShopOnlineDbContext();
+            this.Db = new ShopOnlineDbContext();
+        }
 
-        }
-        public long Insert(User entity)
+        public ShopOnlineDbContext Db { get; private set; }
+        //public List<User> ListCate()
+        //{
+        //    return Db.Users.ToList();
+        //}
+        //public User getById(int id)
+        //{
+        //    return Db.Users.Single(i => i.id == id);
+        //}
+        public bool checkLogin(string username, string password)
         {
-            db.Users.Add(entity);
-            db.SaveChanges();
-            return entity.ID;
-        }
-        public User GetByID(string userName)
-        {
-            return (User)db.Users.SingleOrDefault(x => x.UserName == userName);
-        }
-        public bool Login(string userName, string passWord)
-        {
-            var result = db.Users.Count(x => x.UserName == userName && x.Password == passWord);
-            if(result > 0)
+            if (!string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(username))
             {
-                return true;
+                int a = Db.Users.Where(y => y.UserName == username && y.Password == password).ToList().Count();
+                if (a >= 1)
+                    return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
     }
 }

@@ -1,0 +1,91 @@
+﻿@model List<Model.EF.ProductCategory>
+
+
+<form action="Add" method="post" role="form" enctype="multipart/form-data">
+    <div class="box box-default">
+        <div class="box-header with-border">
+            <h3 class="box-title">Thêm mới </h3>
+
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+            </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Tên mỹ phẩm</label>
+                        <input type="text" name="TLK" class="form-control" id="TLK" placeholder="Enter tên mỹ phẩm">
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Thông tin chi tiết</label>
+                        <input type="text" class="form-control" name="TSKT" id="TSKT" placeholder="Enter thông tin chi tiết">
+                    </div>
+                    @*<div class="form-group">
+                        <label for="exampleInputEmail1">Thời gian bảo hành</label>
+                        <input type="text" class="form-control" name="TGBH" id="TGBH" placeholder="Enter Thời gian bảo hành">
+                    </div>*@
+                </div>
+                <!-- /.col -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Loại mỹ phẩm</label>
+                        <select class="form-control" name="MLLK">
+                            @foreach (var item in Model)
+                            {
+                                <option value="@item.ID">@item.Name</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Loại sản phẩm</label>
+                        <select class="form-control" name="MLM">
+                            @foreach (var item in ViewBag.lm)
+                            {
+                                <option value="@item.CategoryID">@item.Name</option>
+                            }
+                        </select>
+                    </div>
+                    @*<div class="form-group">
+                        <label>Nhà cung cấp</label>
+                        <select class="form-control" name="MNCC">
+                            @foreach (var item in ViewBag.ncc)
+                            {
+                                <option value="@item.maNCC">@item.tenNhaCungCap</option>
+                            }
+                        </select>
+                    </div>*@
+                    <!-- /.form-group -->
+
+                </div>
+                <!-- /.col -->
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="form-group">
+                        <label for="exampleInputFile">Chọn ảnh</label>
+                        <input type="file" id="photo" name="photo">
+                        <p class="help-block">Chọn ảnh của mỹ phẩm</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mô tả</label>
+                        <textarea name="MT" id="description" class="form-control" rows="3" placeholder="Thêm mô tả ..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.box-body -->
+
+    </div>
+    <div class="box-footer">
+        <input type="submit" class="btn btn-primary" value="Thêm" />
+    </div>
+</form>

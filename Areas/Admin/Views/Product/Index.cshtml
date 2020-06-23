@@ -1,0 +1,109 @@
+﻿@model PagedList.IPagedList<Model.EF.Product>
+@using PagedList.Mvc
+
+
+
+<div class="box-body">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">@ViewBag.Title</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <a href="~/Admin/LinhKienMayTinh/Add">Thêm mới</a>
+                    <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên mỹ phẩm</th>
+                                <th>Thông số chi tiết</th>
+                                @*<th>Thời gian bảo hành</th>*@
+                                <th>Loại mỹ phẩm</th>
+                                <th>Loại sản phẩm</th>
+                                @*<th>Nhà sản xuất</th>*@
+                                <th>Mô tả</th>
+                                <th>Ảnh</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (var i = 0; i < Model.Count; i++)
+                            {
+                                var item = Model.ElementAt(i);
+                                <tr>
+                                    <td>@(i + 1)</td>
+                                    <td>
+                                        @item.Name
+                                    </td>
+                                    <td>@item.Detail</td>
+                                    @*<td>@item.thoiGianBaoHanh</td>*@
+                                    <td>
+                                        @foreach (var items in ViewBag.llk)
+                                        {
+                                            if (@item.ID == @items.ID)
+                                            {
+                                                @items.Name;
+                                            }
+                                        }
+                                    </td>
+                                    <td>
+                                        @foreach (var items in ViewBag.lm)
+                                        {
+                                            if (@item.CategoryID == items.CategoryID)
+                                            {
+                                                @items.Name;
+                                            }
+                                        }
+                                    </td>
+                                    @*<td>
+                                        @foreach (var items in ViewBag.ncc)
+                                        {
+                                            if (@item.maNhaCungCap == items.maNCC)
+                                            {
+                                                @items.tenNhaCungCap;
+                                            }
+                                        }
+                                    </td>*@
+                                    <td>@item.Đetail</td>
+                                    <td><img height=50 src="~/Areas/Admin/Content/Photo/@item.Image" /></td>
+                                    <td>
+                                        <a href="~/Admin/LinhKienMayTinh/Edit/@item.ID">
+                                            <span class="glyphicon glyphicon-edit">
+                                            </span>
+                                        </a>
+
+                                        <a href="~/Admin/LinhKienMayTinh/Delete/@item.ID" onclick="return confirm('Bạn chắc chắn muốn xóa?')">
+                                            <span class="glyphicon glyphicon-trash"></span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+
+                    </table>
+
+                    <div class="col-sm-7">
+                        <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+                            @Html.PagedListPager(Model, PageNum => Url.Action("Index", new { PageNum }))
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- /.box-body -->
+
+            </div>
+            <!-- /.box -->
+            <!-- /.box -->
+        </div>
+        <!-- /.col -->
+
+    </div>
+    <!-- /.row -->
+
+
+
+</div>
