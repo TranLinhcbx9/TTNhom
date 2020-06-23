@@ -47,10 +47,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+<<<<<<< HEAD
       <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+=======
+      <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+>>>>>>> d0e3b1c1817e57b13afb6fc93defcdc6db0514a5
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
@@ -2672,7 +2679,95 @@
     <Content Include="Assets\Admin\vendor\jquery\jquery.min.js" />
     <Content Include="Assets\Admin\vendor\jquery\jquery.slim.js" />
     <Content Include="Assets\Admin\vendor\jquery\jquery.slim.min.js" />
+<<<<<<< HEAD
     <Content Include="Content\PagedList.css" />
+=======
+    <Content Include="Assets\Client\css\animate.css" />
+    <Content Include="Assets\Client\css\bootstrap.min.css" />
+    <Content Include="Assets\Client\css\font-awesome.min.css" />
+    <Content Include="Assets\Client\css\main.css" />
+    <Content Include="Assets\Client\css\prettyPhoto.css" />
+    <Content Include="Assets\Client\css\price-range.css" />
+    <Content Include="Assets\Client\css\responsive.css" />
+    <Content Include="Assets\Client\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\Client\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Assets\Client\images\404\404.png" />
+    <Content Include="Assets\Client\images\blog\blog-one.jpg" />
+    <Content Include="Assets\Client\images\blog\blog-three.jpg" />
+    <Content Include="Assets\Client\images\blog\blog-two.jpg" />
+    <Content Include="Assets\Client\images\blog\man-four.jpg" />
+    <Content Include="Assets\Client\images\blog\man-one.jpg" />
+    <Content Include="Assets\Client\images\blog\man-three.jpg" />
+    <Content Include="Assets\Client\images\blog\man-two.jpg" />
+    <Content Include="Assets\Client\images\blog\socials.png" />
+    <Content Include="Assets\Client\images\cart\one.png" />
+    <Content Include="Assets\Client\images\cart\three.png" />
+    <Content Include="Assets\Client\images\cart\two.png" />
+    <Content Include="Assets\Client\images\home\bg_border.png" />
+    <Content Include="Assets\Client\images\home\gallery1.jpg" />
+    <Content Include="Assets\Client\images\home\gallery2.jpg" />
+    <Content Include="Assets\Client\images\home\gallery3.jpg" />
+    <Content Include="Assets\Client\images\home\gallery4.jpg" />
+    <Content Include="Assets\Client\images\home\girl1.jpg" />
+    <Content Include="Assets\Client\images\home\girl2.jpg" />
+    <Content Include="Assets\Client\images\home\girl3.jpg" />
+    <Content Include="Assets\Client\images\home\iframe1.png" />
+    <Content Include="Assets\Client\images\home\iframe2.png" />
+    <Content Include="Assets\Client\images\home\iframe3.png" />
+    <Content Include="Assets\Client\images\home\iframe4.png" />
+    <Content Include="Assets\Client\images\home\logo.png" />
+    <Content Include="Assets\Client\images\home\map.png" />
+    <Content Include="Assets\Client\images\home\new.png" />
+    <Content Include="Assets\Client\images\home\partner1.png" />
+    <Content Include="Assets\Client\images\home\partner2.png" />
+    <Content Include="Assets\Client\images\home\partner3.png" />
+    <Content Include="Assets\Client\images\home\partner4.png" />
+    <Content Include="Assets\Client\images\home\pricing.png" />
+    <Content Include="Assets\Client\images\home\product1.jpg" />
+    <Content Include="Assets\Client\images\home\product2.jpg" />
+    <Content Include="Assets\Client\images\home\product3.jpg" />
+    <Content Include="Assets\Client\images\home\product4.jpg" />
+    <Content Include="Assets\Client\images\home\product5.jpg" />
+    <Content Include="Assets\Client\images\home\product6.jpg" />
+    <Content Include="Assets\Client\images\home\recommend1.jpg" />
+    <Content Include="Assets\Client\images\home\recommend2.jpg" />
+    <Content Include="Assets\Client\images\home\recommend3.jpg" />
+    <Content Include="Assets\Client\images\home\sale.png" />
+    <Content Include="Assets\Client\images\home\searchicon.png" />
+    <Content Include="Assets\Client\images\home\shipping.jpg" />
+    <Content Include="Assets\Client\images\product-details\1.jpg" />
+    <Content Include="Assets\Client\images\product-details\new.jpg" />
+    <Content Include="Assets\Client\images\product-details\rating.png" />
+    <Content Include="Assets\Client\images\product-details\share.png" />
+    <Content Include="Assets\Client\images\product-details\similar1.jpg" />
+    <Content Include="Assets\Client\images\product-details\similar2.jpg" />
+    <Content Include="Assets\Client\images\product-details\similar3.jpg" />
+    <Content Include="Assets\Client\images\shop\advertisement.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-001_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-7JWE7Yag7Yyc207I2464Sk7J28_405x405.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-7JWE7Yag7Yyc7I2464Sk7J287IiY7KCV_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-ATPS11E_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-BentonBS05HCO_230x230.png" />
+    <Content Include="Assets\Client\images\shop\thumb-CP1HS02TTa_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-CP1HS03TTca_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-HXBS08L_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-IFHS41T_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-IFS41Serum_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-IMG_3620_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-NGS10PoreS_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-NGS21E_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-repari_230x230.jpg" />
+    <Content Include="Assets\Client\images\shop\thumb-THS36Nutrition_230x230.png" />
+    <Content Include="Assets\Client\js\bootstrap.min.js" />
+    <Content Include="Assets\Client\js\contact.js" />
+    <Content Include="Assets\Client\js\gmaps.js" />
+    <Content Include="Assets\Client\js\html5shiv.js" />
+    <Content Include="Assets\Client\js\jquery.js" />
+    <Content Include="Assets\Client\js\jquery.prettyPhoto.js" />
+    <Content Include="Assets\Client\js\jquery.scrollUp.min.js" />
+    <Content Include="Assets\Client\js\main.js" />
+    <Content Include="Assets\Client\js\price-range.js" />
+>>>>>>> d0e3b1c1817e57b13afb6fc93defcdc6db0514a5
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -2849,6 +2944,7 @@
     <Content Include="Assets\Admin\vendor\jquery\jquery.slim.min.map" />
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+<<<<<<< HEAD
     <Content Include="Areas\Admin\Views\Product\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Login.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Add.cshtml" />
@@ -2975,6 +3071,12 @@
     <Content Include="Areas\Admin\Theme\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="Areas\Admin\Theme\plugins\input-mask\phone-codes\phone-codes.json" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+=======
+    <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
+    <Content Include="Assets\Client\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\Client\fonts\FontAwesome.otf" />
+    <Content Include="Assets\Client\fonts\glyphicons-halflings-regular.woff" />
+>>>>>>> d0e3b1c1817e57b13afb6fc93defcdc6db0514a5
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2995,16 +3097,19 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Shop.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+<<<<<<< HEAD
     <Folder Include="Assets\Client\" />
     <Folder Include="Controllers\" />
+=======
+>>>>>>> d0e3b1c1817e57b13afb6fc93defcdc6db0514a5
     <Folder Include="Models\" />
     <Folder Include="NewFolder1\" />
   </ItemGroup>
