@@ -1,0 +1,58 @@
+﻿@model ShopCar.Model.NhaCC
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Chi tiết</h2>
+
+<div>
+    <h4>Nhà cung cấp</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mã nhà cung cấp
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaNCC)
+        </dd>
+        <dt>
+            Tên nhà cung cấp
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNCC)
+        </dd>
+
+        <dt>
+            Địa chỉ
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+
+        <dt>
+            Số điện thoại
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SDT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.MaNCC }) |
+    @Html.ActionLink("Quay lại danh sách", "Index")
+</p>

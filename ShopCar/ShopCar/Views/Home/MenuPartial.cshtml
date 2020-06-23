@@ -1,0 +1,29 @@
+﻿@using ShopCar.Model;
+@model LoaiSP
+
+@{
+    IEnumerable<LoaiSP> lstLoaiSP = (IEnumerable<LoaiSP>)ViewBag.lstLoaiSP;
+}
+
+<form action="/TimKiem/LayTuKhoaTimKiem" method="post">
+    <div class="hover_category">
+        <select class="select_option" id="MaLoaiSP" name="MaLoaiSP" style="display: none;">
+            @foreach (var item in lstLoaiSP)
+            {
+                <option value="@item.MaLoaiSP">@item.TenLoai</option>
+            }
+
+        </select>
+
+    </div>
+    <div class="search_box">
+        <input type="text" name="sTuKhoa" placeholder="Nhập tên sản phẩm" />
+        <button type="submit">Tìm kiếm</button>
+    </div>
+</form>
+
+@*@using (Html.BeginForm("LayTuKhoaTimKiem", "TimKiem"))
+    {
+
+    }*@
+
