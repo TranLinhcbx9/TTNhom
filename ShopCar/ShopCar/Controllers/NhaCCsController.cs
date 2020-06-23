@@ -11,7 +11,7 @@ using ShopCar.Model;
 
 namespace ShopCar.Controllers
 {
-    [Authorize(Roles =("QuanTriVien"))]
+    //[Authorize(Roles =("QuanTriVien"))]
     public class NhaCCsController : Controller
     {
         private CarShopEntities db = new CarShopEntities();

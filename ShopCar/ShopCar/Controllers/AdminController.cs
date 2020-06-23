@@ -47,7 +47,7 @@ namespace WebsiteBanHang.Controllers
             {
                 Session["TaiKhoanAdmin"] = ad;
 
-                var lstQuyen = db.QuyenAds.Where(x => x.MaAdmin == ad.MaAdmin);
+                var lstQuyen = db.QuyenAds.Where(x => x.MaAdmin != null);
                 string quyen = "";
 
                 foreach (var item in lstQuyen)
